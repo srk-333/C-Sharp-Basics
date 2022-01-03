@@ -12,9 +12,9 @@ namespace HumanEntity
         {
             Console.WriteLine("HELLO HUMAN");
 
-            //calling class1 method
+            //creating object of class1
             Class1 class1 = new Class1();
-            class1.Run();
+            class1.Run(); // calling Run method from class1
         }
 
     }

@@ -10,10 +10,11 @@ namespace HumanEntity
     {
        public void Run()
         {
+            // variables
             String userName = "saurav";
             int userAge = 24;
             double userHeight = 5.6;
-
+            //printing userName Age And Height
             Console.WriteLine(userName +" "+ userAge +" "+ userHeight);
             Console.Read();
         }
