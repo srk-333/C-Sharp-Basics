@@ -11,7 +11,11 @@ namespace HumanEntity
         static void Main(string[] args)
         {
             Console.WriteLine("HELLO HUMAN");
-            Console.ReadLine();
+
+            //calling class1 method
+            Class1 class1 = new Class1();
+            class1.Run();
         }
+
     }
 }
