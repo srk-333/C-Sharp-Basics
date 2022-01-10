@@ -42,5 +42,6 @@ namespace ClassObjectImp.Variables
          * readonly can be initialized after declaration.
          * Behaviour of readonly variable is like Instance variables.
          */
+       public readonly int k = 90;
     }
 }

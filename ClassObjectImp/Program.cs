@@ -69,7 +69,8 @@ namespace ClassObjectImp
             uvrTwo.height = 5.6;
             Console.WriteLine("\n\n Instance Variables for Second Object are: " + "  Name: " + uvrTwo.name + "   Age: " + uvrTwo.age + "   Height: " + uvrTwo.height);
             Console.WriteLine("\n Static Variables are: " + "  Name: " + UseOfVariables._name + "  Age: " + UseOfVariables._age + "   Height: " + UseOfVariables._height);
-            Console.WriteLine("\n Constant Variables are: " + "  Age: " + UseOfVariables.ageNumber + "   Percentage: " + UseOfVariables.percentage);          
+            Console.WriteLine("\n Constant Variables are: " + "  Age: " + UseOfVariables.ageNumber + "   Percentage: " + UseOfVariables.percentage);
+            Console.WriteLine("\n\n ReadOnly variable is: " + uvrTwo.k);
         }
     }
 }
