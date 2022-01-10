@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DogCharAndBehaviour;  //importing DogCharAndBehaviour namespace in Main namespace
+using ClassObjectImp.Variables; //importing ClasObjectImp.Variables namespace in Main namespace
 
 namespace ClassObjectImp
 {
@@ -39,7 +40,36 @@ namespace ClassObjectImp
             //calling Non-static Methods of Dog class using firstDog obj of class Dog
             firstDog.Run();
             firstDog.Sit();
+
+            Program.VariableCall(); //calling variableCall Method
             Console.ReadLine();
+        }
+        public static void VariableCall()
+        { 
+            // stattic variables Initializing using class reference
+            UseOfVariables._age = 24;
+            UseOfVariables._name = "Saurav";
+            UseOfVariables._height = 5.7;
+
+            //creating first object of UseOfVariables Class as uvrOne. 
+            UseOfVariables uvrOne = new UseOfVariables();
+            // Instance variables Initializing using Object reference
+            uvrOne.name = "Gourav";
+            uvrOne.age = 23;
+            uvrOne.height = 5.6;
+            Console.WriteLine("\n Instance Variables for First Object are: "+"  Name: "+ uvrOne.name + "  Age: " + uvrOne.age + "  Height: " + uvrOne.height);
+            Console.WriteLine("\n Static Variables are: " + "  Name: " + UseOfVariables._name + "   Age: " + UseOfVariables._age+"  Height: "+UseOfVariables._height);
+            Console.WriteLine("\n Constant Variables are: " + "  Age: " + UseOfVariables.ageNumber + "   Percentage: " + UseOfVariables.percentage);
+
+            //creating Second object of UseOfVariables Class as uvrOne. 
+            UseOfVariables uvrTwo = new UseOfVariables();
+            // Instance variables Initializing using Object reference
+            uvrTwo.name = "Ritesh";
+            uvrTwo.age = 28;
+            uvrTwo.height = 5.6;
+            Console.WriteLine("\n\n Instance Variables for Second Object are: " + "  Name: " + uvrTwo.name + "   Age: " + uvrTwo.age + "   Height: " + uvrTwo.height);
+            Console.WriteLine("\n Static Variables are: " + "  Name: " + UseOfVariables._name + "  Age: " + UseOfVariables._age + "   Height: " + UseOfVariables._height);
+            Console.WriteLine("\n Constant Variables are: " + "  Age: " + UseOfVariables.ageNumber + "   Percentage: " + UseOfVariables.percentage);          
         }
     }
 }
